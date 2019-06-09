@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="whole-list">
+        <header id="header">
+            <h1>To Do List</h1>
+        </header>
+
+        <ul id="lists">
+            
+        </ul>
+
+        <input id="input" type="text" placeholder="Add a task" onkeydown="enter()">
+    </div>
+
+    <div class="buttons">
+        <button id="enterBtn" type="button" onclick="eventEnter()">Enter Task</button>
+        <button id="clearBtn" type="button" onclick="clearCompletes()" hidden>Clear Completes</button>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
