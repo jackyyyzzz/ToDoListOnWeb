@@ -38,7 +38,9 @@
 
 .buttons{
     margin: auto;
-    max-width: 30%;
+    max-width: 40%;
+    display: flex;
+    justify-content: space-around;
 }
 
 #enterBtn{
