@@ -8,23 +8,24 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="whole-list">
-        <header id="header">
-            <h1>To Do List</h1>
-        </header>
+    <div class="container">
+        <div class="whole-list">
+            <header id="header">
+                <h1>To Do List</h1>
+            </header>
 
-        <ul id="lists">
-            
-        </ul>
+            <ul id="lists">
+                
+            </ul>
 
-        <input id="input" type="text" placeholder="Add a task" onkeydown="enter()" >
+            <input id="input" type="text" placeholder="Add a task" onkeydown="enter()" >
+        </div>
+
+        <div class="buttons">
+            <button id="enterBtn" type="button" onclick="eventEnter()">Enter Task</button>
+            <button id="clearBtn" type="button" onclick="clearCompletes()" hidden>Clear Completes</button>
+        </div>
     </div>
-
-    <div class="buttons">
-        <button id="enterBtn" type="button" onclick="eventEnter()">Enter Task</button>
-        <button id="clearBtn" type="button" onclick="clearCompletes()" hidden>Clear Completes</button>
-    </div>
-    
     <script src="./script.js"></script>
 </body>
 </html>
