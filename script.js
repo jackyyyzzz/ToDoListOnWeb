@@ -1,4 +1,10 @@
 function eventEnter() {
+    if (document.getElementById('input').value.trim() == "") {
+        document.getElementById("input").value = "";
+        alert("Cannot be empty.")
+        return;
+    }
+
     const list = document.createElement('li');
 
     const input = document.createElement("input");
